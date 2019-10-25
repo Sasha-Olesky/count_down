@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="clock_white">#ffffff</color>
+    <color name="blue_700">#1976d2</color>
+
+    <!-- clock -->
+    <color name="background_color">#F555</color>
+    <color name="black">#000</color>
+    <color name="marker_color">#AFFF</color>
+    <color name="text_color">#AFFF</color>
+    <color name="secondHandColor">#FFFF0000</color>
+    <color name="grey">#ffaaaaaa</color>
+    <color name="bottom_color">#909090</color>
+    <color name="nav_color">#606060</color>
+
+    <color name="shadow_color">#7AAA</color>
+    <color name="row_pressed_color">#ffeeeeee</color>
+    <color name="outer_border">#FF444444</color>
+    <color name="inner_border_one">#FF323232</color>
+    <color name="inner_border_two">#FF414141</color>
+    <color name="inner_border">#FFFFFFFF</color>
+    <color name="list_border_color">#C8C7CC</color>
+</resources>

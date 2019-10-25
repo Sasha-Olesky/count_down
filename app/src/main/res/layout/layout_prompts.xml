@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERT missing days or weeks or months : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editTextDialogUserInput"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:inputType="numberSigned"
+            android:maxLength="5">
+            <requestFocus />
+        </EditText>
+        <Button
+            android:id="@+id/btnInputType"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0"
+            android:scaleType="fitXY"
+            android:textAlignment="center"
+            android:text="D"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkboxFestival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Saturdays and Sundays."/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type the days already passed"/>
+    <LinearLayout
+        android:id="@+id/layout_passed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/editPassed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:maxLength="5">
+        </EditText>
+        <ImageButton
+            android:id="@+id/btnDate"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0"
+            android:src="@drawable/date_picker_icon"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/repeatCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type the times treatment will be repeated"/>
+    <EditText
+        android:id="@+id/editRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:inputType="numberSigned"
+        android:maxLength="5">
+    </EditText>
+</LinearLayout>
